@@ -38,4 +38,5 @@ function generateMarkdown(data) {
 `;
 }
 
+//object that holds the exported values and functions from this module
 module.exports = generateMarkdown;

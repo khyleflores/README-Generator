@@ -18,6 +18,12 @@
   
   ## Usage
   Once software is downloaded and Node packages are initialised, you will now be able to access the application. Use the command "node index.js" within the directory of this project to initialise the prompts. Enter the information requested in the prompts and a new README file will be generated.
+
+  Below is a screenshot of a working README generator in Gitbash
+  ![Working application screenshot](/screenshot/Gitbash-README-Generator.png)
+
+  Below is a screenshot of an example of a generated README file
+  ![READMe example screenshot](/screenshot/Generated-README-example.png)
   
   ## License
    This application is under the MPL--2.0 license. Click on this [link](https://opensource.org/licenses/MPL--2.0 "MPL--2.0 License") to know what the license is covered under.

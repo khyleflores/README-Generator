@@ -1,3 +1,4 @@
+// Using require to include modules
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
@@ -62,17 +63,19 @@ const promptUser = () =>
 
 
 // function to initialize program
+// using async/await and try/catch
 const init = async () => {
     console.log('Hello, welcome to the README Generator.');
     try {
+     //wait until the promise is settled
       const answers = await promptUser();
       
       //Call the function from utils folder in generateMarkdown.js
       const readme = generateMarkdown(answers);
   
-      await writeToFile('README.md', readme);
+      await writeToFile('./utils/GeneratedREADME.md', readme);
   
-      console.log('Successfully created a README file');
+      console.log('Successfully generated a README file');
     } catch (err) {
       console.log(err);
     }
