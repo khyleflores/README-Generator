@@ -4,6 +4,7 @@ const inquirer = require("inquirer");
 const util = require('util');
 const generateMarkdown = require("./utils/generateMarkdown");
 
+
 const writeToFile = util.promisify(fs.writeFile);
 
 // Prompt questions to users using Inquirer npm
@@ -33,9 +34,8 @@ const promptUser = () =>
       type: 'list',
       name: 'license',
       message: 'Please select a license.',
-      choices: ['Apache License 2.0', 'GNU Affero General Public License v3.0', 'MIT', 'BSD 2-clause "Simplified"', 'BSD 3-clause "New" or "Revised" license',
-              'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0',
-              'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'],
+      choices: ['Apache--2.0', 'LGPL--3.0', 'MIT', 'BSL', 'EPL--2.0', 'AGPL--v3',
+              'GPL--2.0', 'MPL--2.0', 'Unlicense'],
     },
     {
       type: 'input',
@@ -63,7 +63,7 @@ const promptUser = () =>
 
 // function to initialize program
 const init = async () => {
-    console.log('Hello');
+    console.log('Hello, welcome to the README Generator.');
     try {
       const answers = await promptUser();
       
