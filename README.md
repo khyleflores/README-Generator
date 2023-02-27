@@ -24,6 +24,10 @@
 
   Below is a screenshot of an example of a generated README file
   ![READMe example screenshot](/screenshot/Generated-README-example.png)
+
+  Here is a [link](https://drive.google.com/file/d/1q0N--B1bkPzW3dXf_Bk5wy24RkE6lfYM/view "Walkthrough Video") to view the walkthrough video demonstrating the functionality of the application.
+
+
   
   ## License
    This application is under the MPL--2.0 license. Click on this [link](https://opensource.org/licenses/MPL--2.0 "MPL--2.0 License") to know what the license is covered under.
@@ -37,5 +41,5 @@
   ## Questions 
   To view my Github profile, click on this [link](https://github.com/khyleflores "https://github.com/khyleflores")
 
-  If you require any further information, feel free to contact me at khylejinya@yahoo.com.
+
 
